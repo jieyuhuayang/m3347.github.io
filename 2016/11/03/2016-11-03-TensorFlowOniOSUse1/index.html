@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="柚梓 Blog">
 <meta property="og:description" content="距离上次使用 TensorFlow 在iOS平台上做的小 Demo，已经过了四个月了，今天忽然想再看看,发现 Demo 已经不见了，我只能从头在编一次，这次发现编译 iOS 库，简单多了。 　　tensorflow 下载地址，tensorflow 最近提交的时间：2016-11-03，commit：7b7c02de56e013482b5fe5ab05e576dc98fe5742 。 　　下载完">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-29T12:31:23.145Z">
+<meta property="og:updated_time" content="2019-12-02T06:18:38.165Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TensorFlow 在 iOS 平台上的使用(一)">
 <meta name="twitter:description" content="距离上次使用 TensorFlow 在iOS平台上做的小 Demo，已经过了四个月了，今天忽然想再看看,发现 Demo 已经不见了，我只能从头在编一次，这次发现编译 iOS 库，简单多了。 　　tensorflow 下载地址，tensorflow 最近提交的时间：2016-11-03，commit：7b7c02de56e013482b5fe5ab05e576dc98fe5742 。 　　下载完">
@@ -396,8 +396,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-11-29T20:31:23+08:00">
-                2019-11-29
+              <time title="更新于" itemprop="dateModified" datetime="2019-12-02T14:18:38+08:00">
+                2019-12-02
               </time>
             
           </span>
@@ -424,7 +424,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  634
+                  586
                 </span>
               
 
@@ -477,7 +477,6 @@
 <p>这个编译的过程是很漫长的，一般在一个小时左右。也有可能你在编译的过程中会遇到问题，这次我只遇到一个问题：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">configure.ac:30: error: required file &apos;build-aux/ltmain.sh&apos; not found</span><br><span class="line">configure.ac:24: installing &apos;build-aux/missing&apos;</span><br><span class="line">Makefile.am: installing &apos;build-aux/depcomp&apos;</span><br><span class="line">parallel-tests: installing &apos;build-aux/test-driver&apos;</span><br><span class="line">autoreconf: automake failed with exit status: 1</span><br></pre></td></tr></table></figure>
 <p>解决方法是：先卸载 libtool 在重新安装，<code>brew uninstall libtool</code> &amp;&amp; <code>brew install libtool</code></p>
-<p>如果你还遇到了其它问题，可以看看我之前的一片文章 <a href="http://baixin.io/2016/07/iOSMachineLearning_TensorFlow/" target="_blank" rel="noopener">iOS开发迎来机器学习的春天—TensorFlow</a> ，或者是直接去 tensorflow 的 <a href="https://github.com/tensorflow/tensorflow/issues" target="_blank" rel="noopener">Issues</a> 里面找。 </p>
 <p>一个小时后。。。　如果编译没出问题，你可以在目录　<code>tensorflow-master/tensorflow/contrib/makefile／gen/lib</code> 下找到一个静态库：<code>libtensorflow-core.a</code> ，把这个静态库拷贝到 camera 项目中，然后编译运行。</p>
 <p><br></p>
 
@@ -696,7 +695,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -707,7 +706,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -718,7 +717,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -842,7 +841,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">网站总字数&#58;</span>
     
-    <span title="网站总字数">52.1k</span>
+    <span title="网站总字数">67.6k</span>
   
 </div>
 
