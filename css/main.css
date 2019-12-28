@@ -3159,7 +3159,7 @@ header {
   background: rgba(251,251,251,0.71) !important;
 }
 body {
-  background: url("/images/bg.jpg");
+  background: url("https://cdn.jsdelivr.net/gh/YX1900/ImageHosting/1900pic/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
